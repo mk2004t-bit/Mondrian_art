@@ -1,0 +1,138 @@
+/*grids*/
+.mondrian-container{
+
+    display:grid;
+    width:800px;
+    height:800px;
+    grid-template-rows:220px 220px 220px 110px;
+    grid-template-columns:1.5fr 1fr 1fr 0.5fr;
+    background:#000;
+    gap:9px;
+    padding:15px
+
+}
+
+.chess-box{
+
+    display:grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-columns:1fr;
+    gap:10px;
+
+}
+
+body{
+
+    display:flex;
+    height:100vh;
+    justify-content:space-between;
+    align-items:center;
+    margin:0;
+    padding:100px;
+
+}
+
+.item{
+
+    background:#F0F1EC;
+
+}
+
+.yellow{
+
+    background:#F9D01E;
+    grid-row:span 2;
+
+}
+
+.red{
+
+    background:red;
+    grid-column:span 3;
+    grid-row:span 3;
+
+}
+
+.blue{
+
+    background:#004592;
+
+}
+
+.whitem2{
+
+    grid-column:span 2;
+
+}
+
+/*chess grid */
+.chess-container1{
+
+    display:grid;
+    width:400px;
+    background:black;
+    grid-template-rows:repeat(8,1fr);
+    grid-template-columns:repeat(8,1fr);
+    align-self:flex-start;
+    padding:5px
+
+}
+
+.white1 {
+
+    height: 50px;
+    width: 50px;
+    background-color: #f0d9b5;
+
+}
+
+.black1 {
+
+    height: 50px;
+    width: 50px;
+    background-color: #b58863;
+
+}
+
+.chess-container2{
+
+    display:grid;
+    width:400px;
+    background:black;
+    grid-template-rows:repeat(8,1fr);
+    grid-template-columns:repeat(8,1fr);
+    align-self:flex-end;
+    padding:5px;
+
+}
+
+.white {
+
+    height: 50px;
+    width: 50px;
+    background-color: white;
+
+}
+
+.black {
+
+    height: 50px;
+    width: 50px;
+    background-color: black;
+
+}
+
+@media(max-width:1025px){
+
+    body{
+        
+        display:flex;
+        flex-direction:column; 
+        background-color:limegreen;
+            
+    }
+
+}
+
+
+
